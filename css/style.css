@@ -192,7 +192,7 @@ text-align: center;
     
     height: 350px;
     box-shadow: 0px 0px 20px 0px #aaa; /* gave shadow to the row */
-    overflow-y: hidden;
+    
 }
 .row1{
     margin-bottom: 10rem;
@@ -275,11 +275,10 @@ background: linear-gradient(rgba(0,0,0,0) rgba(0,0,0,0));
 .box{
     width: 33.3333333%;
     float: left;
-  max-height: inherit;
-  min-height: inherit;
+  
     padding: 2rem;
     text-align: center;
-    overflow-y: hidden;
+   
 }
 
 /* ############### FOOTER STYKING ################## */
