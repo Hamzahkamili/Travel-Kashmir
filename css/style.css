@@ -1,0 +1,289 @@
+/* this is here used to import font from internet */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* selecting whole/universal page  */
+*{
+    margin: 0;/*so that no default margin occur*/
+padding:0; /*so that no default padding occur*/
+box-sizing: border-box;
+}
+
+html{
+    /* we use html to make changes to whole webpage */
+    /* font-size: 10px but will keep it into percentage to help it to make responsive; */
+    /* by default font size is 16px therefore its 100% */
+    /* to make 1%=(100/16) */
+    /* to make 10%= (100/16)*10 that is 62.5% */
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none; /* this will remove the dots that appear before li */
+
+}
+a{
+    font-size: 1.6rem; /* it will change size into 16px by multiplying 1.6 * rem(10) as rem=10 in html */
+    text-decoration: none; /* it will remove the underline below li */  
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em ; /*it will be reduced to 50% ...as rem and em has relation with each other..yai margin ko reduce karai ga 50% font-size sai */ 
+letter-spacing: 0.15em; /* space btw letteres */
+}
+h1, h2, h3{
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+
+
+/* hover for li */
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######### utility classes ############ (ur choice if u want to do it here or u can directly put style in each of its section)*/
+
+.container{
+    /* this will gap from left and right to webpage and will make it responsive for details see video cssp1 #7 */
+    max-width: 1200px;
+    width: 90%; /* makes it responsive*/
+    margin: 0 auto; /* for putting text at centre*/
+}
+.lg-heading{
+    font-size: 3rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+.btn-primary{
+    display: inline-block;
+    background: white;
+    padding: 0.5em 1.5em;
+    margin:0.5em 0;
+    font-weight: 500;
+    border-radius: 10rem;
+    
+}
+.btn-primary:hover{
+    background: #ddd;
+}
+
+
+
+
+
+
+
+
+
+.header{
+    position: relative; /* we have to comare it with position absolute */
+    height:95vh ; /* used to show the header of 95% of screen shown */
+    
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/dargah.jpg); /* adding image  and making it darker by linear gradient */
+    background-position: center; /* keeping image at centre/top/bottom when adjusting the screen(when keeping screen small large)*/
+   
+    background-size: cover;  /* help in adjust the backgroud image to full */
+    background-repeat: no-repeat; 
+
+}
+
+
+.item a{
+    color: white
+    
+}
+
+
+.navbar .h1{
+    color: white;
+  
+  
+}
+.header .navbar .h1{
+    float: left; /* use to put text on extreme left*/
+    font-size: 3.5rem;
+    
+}
+.navbar .items  {
+    float: right; /* use to put text on extreme right */
+    margin-top: 1rem;
+}
+   
+
+.navbar .items .item {
+    display:inline-block;
+    padding: 1rem;
+    
+}
+
+
+/* now navbar line will come on top of the heading and ul and to overcome that and put heading and ul inside navbar we use psedcode */
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ######################### HEADER CONTENT ############ */
+
+.header-container{
+  
+    max-width: 1200px;
+text-align: center;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% ,-50%); /* use to bring text of header at centre*/
+}
+
+.header-container .lg-heading,
+.header-container p{
+    text-transform: uppercase; /* makes text  capital */
+    color: white;
+
+}
+/* ########## SECTION SHOWCASE STYLING ################ */
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px #aaa; /* gave shadow to the row */
+}
+.row1{
+    margin-bottom: 10rem;
+    
+}
+ .row1 .img-box,
+ .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box,
+.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    
+    height: 100%; /* it will take 100% of its parent that is row */
+}
+
+.row .text-box{
+    background: white;
+    height: 100%; /* it will take 100% of its parent that is row */
+    padding: 3rem;
+
+}
+
+
+.row1 .img-box img,
+.row2 .img-box img{ 
+    display: inline-block;
+width: 100%;                           /* if u do like this(addming img in html) image will occur full */
+height: 100%;
+background: linear-gradient(rgba(0,0,0,0) rgba(0,0,0,0));
+}
+
+.btn-secondary{
+    display: inline-block;
+    background: white;
+    padding: 0.5em 1.5em;
+    margin:0.5em 0;
+    font-weight: 500;
+    
+    border: solid rgba(255, 0, 0, 0.445) 1px;
+    border-radius: 10rem;
+}
+.btn-secondary:hover{
+    background: rgb(241, 203, 203); /*use to highlight the button when cursor is placed on it */
+}
+
+/* ############## FEATURE SECTION ############### */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+   box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.466);
+   
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box-wrapper .box-1 , .box-3{
+    background-color: #263232;
+    color:#fff;
+    
+    
+}
+
+.box-wrapper .box-2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #fff;
+    
+}
+.box{
+    width: 33.3333333%;
+    float: left;
+  
+    padding: 2rem;
+    text-align: center;
+}
+
+/* ############### FOOTER STYKING ################## */
+.footer{
+    background: #263232;
+    color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+.fab{
+    padding: 2rem;
+}
