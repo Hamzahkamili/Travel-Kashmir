@@ -300,6 +300,7 @@ background: linear-gradient(rgba(0,0,0,0) rgba(0,0,0,0));
 
 .about{
     padding: 3rem 0;
+   
 }
 
 .about .about-heading{
@@ -334,4 +335,60 @@ width: 50%;
     color: #e63946;
     font: bold;
     padding-right: 1rem;
+}
+/* ######### COUNT STYLING ########### */
+
+.counts{
+    margin: 3rem;
+}
+.count-item{
+    float: left;
+   
+    width: 25%;
+    text-align: center;
+    
+}
+
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.count-item span{
+  font-size: 3rem;
+  font-weight:700 ;
+  color: #e63946;
+}
+
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+/* ######### CONTACT BOX ######## */
+
+.contact-box{
+    border: #e63946 solid 2px;
+    background-color:linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    
+    
+}
+.contact-box p{
+    border: #e63946 solid 2px;
+    width: 50%;
+    float: left;
+}
+
+.contact-box a{
+    border: white 2px solid;
+    
+    
+}
+.contact-box::after{
+    content: "";
+    display: block;
+    clear: both;
 }
