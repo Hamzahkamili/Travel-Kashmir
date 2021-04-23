@@ -94,6 +94,11 @@ h1, h2, h3{
 .text-gray{
     color: #555;
 }
+
+.bg-dark{
+    background-color: #263232;
+}
+
 .btn-primary{
     display: inline-block;
     background: white;
@@ -127,7 +132,7 @@ h1, h2, h3{
 
 }
 
-
+/* ################## NAV BAR STYLING ###################### */
 .item a{
     color: white
     
@@ -139,7 +144,7 @@ h1, h2, h3{
   
   
 }
-.header .navbar .h1{
+ .navbar .h1{
     float: left; /* use to put text on extreme left*/
     font-size: 3.5rem;
     
@@ -289,4 +294,44 @@ background: linear-gradient(rgba(0,0,0,0) rgba(0,0,0,0));
 }
 .fab{
     padding: 2rem;
+}
+
+/* ################ ABOUT US STYLING ############ */
+
+.about{
+    padding: 3rem 0;
+}
+
+.about .about-heading{
+    border-bottom: #e63946 4px solid; /* we can also use pseudo elemts (.h2::after{} for clearifucation watch video #P23*/
+}
+
+/* ################# about wrapper styling ############# */
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+
+}
+
+.about-wrapper .right{
+float: right;
+width: 50%;
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    font: bold;
+    padding-right: 1rem;
 }
