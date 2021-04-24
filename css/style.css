@@ -58,11 +58,6 @@ h1, h2, h3{
 
 
 
-
-
-
-
-
 /* ######### utility classes ############ (ur choice if u want to do it here or u can directly put style in each of its section)*/
 
 .container{
@@ -371,22 +366,39 @@ width: 50%;
 /* ######### CONTACT BOX ######## */
 
 .contact-box{
-    border: #e63946 solid 2px;
-    background-color:linear-gradient(25deg,#d64c7f,#ee4758 50%);
     
+    background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    text-align: center;
     
 }
-.contact-box p{
-    border: #e63946 solid 2px;
-    width: 50%;
-    float: left;
+.box-left{
+    
+padding : 2rem;
+text-align: center;
+    
 }
 
-.contact-box a{
-    border: white 2px solid;
+.box-right{
+ text-align: center;
+}
+
+.box-left p{
+    float: left;
+    width: 50%;
+    color: white;
     
+    font-weight: 700;
+}
+
+.box-right a{
+    
+    color: white;
+    border: white solid 2px;
+    padding-right: 2rem;
     
 }
+
+
 .contact-box::after{
     content: "";
     display: block;
