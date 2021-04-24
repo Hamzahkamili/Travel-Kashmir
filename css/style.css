@@ -110,11 +110,6 @@ h1, h2, h3{
 
 
 
-
-
-
-
-
 .header{
     position: relative; /* we have to comare it with position absolute */
     height:95vh ; /* used to show the header of 95% of screen shown */
@@ -369,6 +364,9 @@ width: 50%;
     
     background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 .box-left{
@@ -396,11 +394,7 @@ text-align: center;
     border: white solid 2px;
     padding-right: 2rem;
     
+    
 }
 
 
-.contact-box::after{
-    content: "";
-    display: block;
-    clear: both;
-}
