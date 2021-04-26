@@ -114,11 +114,12 @@ h1, h2, h3{
     position: relative; /* we have to comare it with position absolute */
     height:95vh ; /* used to show the header of 95% of screen shown */
     
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/dargah.jpg); /* adding image  and making it darker by linear gradient */
+    background: url(../img/dargah.jpg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); /* adding image  and making it darker by linear gradient */
     background-position: center; /* keeping image at centre/top/bottom when adjusting the screen(when keeping screen small large)*/
    
     background-size: cover;  /* help in adjust the backgroud image to full */
     background-repeat: no-repeat; 
+    background-blend-mode: overlay;
 
 }
 
@@ -365,7 +366,7 @@ width: 50%;
     background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -381,7 +382,7 @@ text-align: center;
 }
 
 .box-left p{
-    float: left;
+   
     width: 50%;
     color: white;
     
@@ -393,8 +394,103 @@ text-align: center;
     color: white;
     border: white solid 2px;
     padding-right: 2rem;
-    
+    font-weight: 700;
+    border-radius: 3rem;
     
 }
 
+/* ################### CONTACT PAGE STYLING ################### */
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-address{
+   
+    height: 760px;
+    width: 49%;
+    float: left;
+    background: #fff;
+    padding: 1rem;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem  ;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .address-group{
+    margin-bottom: 2rem;
+}
+
+.form-wrapper .company-address img{
+   max-width: 70%;
+   min-height:40rem;
+   object-fit: cover;
+   object-position: right ;
+
+}
+
+/* ################# FORM STYLING ###########3 */
+.form-wrapper .form{
+    font-size: 1.6rem;
+    height: 760px;
+    background: #fff;
+    
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content:"";
+    display: block;
+    border: 3px solid #ee4758;
+    width: 100%;
+}
+.form-wrapper .form label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.form-wrapper .form label::after{
+    content: "*"; /* * this will come after each form at it denotes mandatory */
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-wrapper .form .contact-us{
+    margin-bottom: 3rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer; /* use to hover */
+}
 
